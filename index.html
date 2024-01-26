@@ -1,87 +1,196 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
     <title>UX/UI Challenge 20</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
   </head>
   <body>
-    
-    <!-- Navigation Bar -->
 
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown"
-          href="#"
-          role="button"
-          aria-expanded="false"
-          >Dropdown</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <a class="navbar-brand" href="#"><img src="../UX_UI_HW_20/images/Logo Blue Rounded.png">Fred Storm Design</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Kiva</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Riple</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Agora</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-lg navCTA" href="#" role="button">Résumé</a>
+          </li>
         </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-
-    <!-- Introduction -->
-
-    <div class="jumbotron">
-      <h1 class="display-4">Riple</h1>
-      <p class="lead">Description of the business or app goes here.</p>
-    </div>
-
-    <!-- Research Section -->
-
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+      </div>
+    </nav>
+    <!-- End navigation bar -->
+     
+    <!-- Jumbotron -->
+    <div class="jumbotron rockBackground">
+      <div class="jumboCopy">
+        <h1 class="display-4">Hello, I'm Fred Storm</h1>
+        <p class="lead">UX Design | UI Design</p>
+        <p class="lead">I bring unique perspectives of human behavior and empirical research methodologies to interaction design.</p>
       </div>
     </div>
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+    <!-- End jumbotron -->
+
+    <!-- Cards -->
+    <div class="container-fluid content">
+      <h2 class="sectionHeading">My Projects</h2>
+      <div class="row showsNear">
+
+        <!-- Card 1 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="../UX_UI_HW_20/images/kiva.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kiva</h5>
+              <p class="card-text">Kiva is a global microfinance nonprofit. They operate on a digital platform that hosts loan profiles and promotes crowdfunding for small business owners.</p>
+              <a href="#" class="btn btn-primary">View Case Study</a>
+            </div>
+          </div>
+        </div>
+        <!-- End card 1 -->
+
+        <!-- Card 2 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="../UX_UI_HW_20/images/riple.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Riple</h5>
+              <p class="card-text">Riple is a mobile (for now) application that focuses 
+                on a short and efficient method of consuming 
+                news stories in a social environment.</p>
+              <a href="#" class="btn btn-primary">View Case Study</a>
+            </div>
+          </div>
+        </div>
+        <!-- End card 2 -->
+
+        <!-- Card 3 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="../UX_UI_HW_20/images/agora.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Agora</h5>
+              <p class="card-text">Agora is a communication platform that puts travelers directly in touch with locals for access to real information, allowing them to avoid tourist traps and achieve more meaningful cultural immersion</p>
+              <a href="#" class="btn btn-primary">View Case Study</a>
+            </div>
+          </div>
+        </div>
+        <!-- End card 3 -->
       </div>
     </div>
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+    <!-- End cards -->
+
+    <!-- Content -->
+    <div class="container-fluid content">
+      <h2 class="sectionHeading">Why we're better</h2>
+
+      <!-- Row 1 -->
+      <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/assistance.png">
+        </div>
+        <div class="text col-8">
+          <h3>We are always here to help!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">Contact Us
+          </a>
+        </div>
       </div>
-    </div>
+      <!-- End row 1 -->
 
-    <!-- Problem Statement -->
+      <!-- Row 2 -->
+      <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/refund.png">
+        </div>
+        <div class="text col-8">
+          <h3>The best prices!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <!-- End row 2 -->
 
-    <div class="jumbotron">
-      <h1 class="display-4">Problem Statement</h1>
-      <p class="lead">Description of the problem statement goes here.</p>
+      <!-- Row 3 -->
+      <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/mail-box.png">
+        </div>
+        <div class="text col-8">
+          <h3>The best shows!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">More shows</a>
+        </div>
+      </div>
+      <!-- End row 3 -->
+
     </div>
+    <!-- End content -->
+
+    <!-- Footer -->
+    <footer class="emailContain">
+      <form>
+        <h3 class="sectionHeading">Join Our Mailing List</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
   </body>
+
 </html>
